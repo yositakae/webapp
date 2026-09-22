@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Shop Order</title>
+
+    <!-- เรียกใช้ CSS -->
+    <link rel="stylesheet" href="../public/css/order.css">
+</head>
+
+<body>
+
+<h1>Coffee Shop Order</h1>
+
+<p>เลือกรายการอาหาร</p>
+<hr>
+
+<table class="menu-table">
+
+    <!-- Espresso -->
+    <tr>
+        <td>
+            <input type="checkbox" id="espresso">
+            <label for="espresso">Espresso</label>
+        </td>
+        <td class="price">฿80</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="espresso_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="espresso_req"
+                   placeholder="เช่น เปลี่ยนเป็นนมโอ๊ต">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Americano -->
+    <tr>
+        <td>
+            <input type="checkbox" id="americano">
+            <label for="americano">Americano</label>
+        </td>
+        <td class="price">฿85</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="americano_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="americano_req"
+                   placeholder="เช่น ไม่ใส่น้ำตาล">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Latte -->
+    <tr>
+        <td>
+            <input type="checkbox" id="latte">
+            <label for="latte">Latte</label>
+        </td>
+        <td class="price">฿90</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="latte_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="latte_req"
+                   placeholder="เช่น หวานน้อย">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Cappuccino -->
+    <tr>
+        <td>
+            <input type="checkbox" id="cappuccino">
+            <label for="cappuccino">Cappuccino</label>
+        </td>
+        <td class="price">฿95</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="cappuccino_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="cappuccino_req"
+                   placeholder="เช่น เพิ่มฟองนม">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Mocha -->
+    <tr>
+        <td>
+            <input type="checkbox" id="mocha">
+            <label for="mocha">Mocha</label>
+        </td>
+        <td class="price">฿100</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="mocha_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="mocha_req"
+                   placeholder="เช่น เพิ่มวิปครีม">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Macchiato -->
+    <tr>
+        <td>
+            <input type="checkbox" id="macchiato">
+            <label for="macchiato">Macchiato</label>
+        </td>
+        <td class="price">฿95</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="macchiato_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="macchiato_req"
+                   placeholder="เช่น ไม่ใส่นม">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Matcha Latte -->
+    <tr>
+        <td>
+            <input type="checkbox" id="matcha">
+            <label for="matcha">Matcha Latte</label>
+        </td>
+        <td class="price">฿95</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="matcha_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="matcha_req"
+                   placeholder="เช่น หวานน้อย">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Milk -->
+    <tr>
+        <td>
+            <input type="checkbox" id="milk">
+            <label for="milk">Milk</label>
+        </td>
+        <td class="price">฿60</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="milk_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="milk_req"
+                   placeholder="เช่น อุ่นร้อน">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Thai Tea -->
+    <tr>
+        <td>
+            <input type="checkbox" id="thaitea">
+            <label for="thaitea">Thai Tea</label>
+        </td>
+        <td class="price">฿80</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="thaitea_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="thaitea_req"
+                   placeholder="เช่น ไม่ใส่น้ำแข็ง">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Cocoa -->
+    <tr>
+        <td>
+            <input type="checkbox" id="cocoa">
+            <label for="cocoa">Cocoa</label>
+        </td>
+        <td class="price">฿85</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="cocoa_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="cocoa_req"
+                   placeholder="เช่น เพิ่มมาร์ชเมลโลว์">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Milk Tea -->
+    <tr>
+        <td>
+            <input type="checkbox" id="milktea">
+            <label for="milktea">Milk Tea</label>
+        </td>
+        <td class="price">฿80</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="milktea_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="milktea_req"
+                   placeholder="เช่น หวาน 50%">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Lemon Tea -->
+    <tr>
+        <td>
+            <input type="checkbox" id="lemontea">
+            <label for="lemontea">Lemon Tea</label>
+        </td>
+        <td class="price">฿75</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="lemontea_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="lemontea_req"
+                   placeholder="เช่น เปรี้ยวเพิ่ม">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Cheesecake -->
+    <tr>
+        <td>
+            <input type="checkbox" id="cheesecake">
+            <label for="cheesecake">Cheesecake</label>
+        </td>
+        <td class="price">฿120</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="cheesecake_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="cheesecake_req"
+                   placeholder="เช่น ไม่เอาซอส">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Apple Tea Cake -->
+    <tr>
+        <td>
+            <input type="checkbox" id="appleteacake">
+            <label for="appleteacake">Apple Tea Cake</label>
+        </td>
+        <td class="price">฿110</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="appleteacake_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="appleteacake_req"
+                   placeholder="เช่น อุ่นร้อน">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Chocolate Cake -->
+    <tr>
+        <td>
+            <input type="checkbox" id="chocolatecake">
+            <label for="chocolatecake">Chocolate Cake</label>
+        </td>
+        <td class="price">฿125</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="chocolatecake_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="chocolatecake_req"
+                   placeholder="เช่น เพิ่มซอสช็อกโกแลต">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Brownie -->
+    <tr>
+        <td>
+            <input type="checkbox" id="brownie">
+            <label for="brownie">Brownie</label>
+        </td>
+        <td class="price">฿100</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="brownie_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="brownie_req"
+                   placeholder="เช่น อุ่นร้อน">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Red Velvet Cake -->
+    <tr>
+        <td>
+            <input type="checkbox" id="redvelvet">
+            <label for="redvelvet">Red Velvet Cake</label>
+        </td>
+        <td class="price">฿130</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="redvelvet_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="redvelvet_req"
+                   placeholder="เช่น เพิ่มวิปครีม">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+
+    <!-- Blueberry Cake -->
+    <tr>
+        <td>
+            <input type="checkbox" id="blueberrycake">
+            <label for="blueberrycake">Blueberry Cake</label>
+        </td>
+        <td class="price">฿130</td>
+    </tr>
+
+    <tr>
+        <td>
+            จำนวน
+            <input type="number"
+                   name="blueberrycake_qty"
+                   min="1"
+                   max="999"
+                   value="1"
+                   class="quantity">
+        </td>
+
+        <td>
+            คำสั่งพิเศษ
+            <input type="text"
+                   name="blueberrycake_req"
+                   placeholder="เช่น เพิ่มซอสบลูเบอร์รี่">
+        </td>
+    </tr>
+
+</table>
+
+
+<br>
+
+<p>ข้อมูลจัดส่งและเวลา</p>
+<hr>
+
+<table class="delivery-table">
+
+    <tr>
+        <td colspan="2">
+            ชื่อผู้สั่ง<br>
+            <input type="text"
+                   name="customer"
+                   placeholder="ชื่อ-นามสกุล">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            เบอร์โทร<br>
+            <input type="tel"
+                   name="phone"
+                   placeholder="08xxxxxx">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            วันที่รับสินค้า<br>
+            <input type="date" name="pickup_date">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            เวลารับสินค้า<br>
+            <input type="time" name="pickup_time">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            ที่อยู่จัดส่ง<br>
+            <textarea name="address"
+                      rows="3"
+                      placeholder="ระบุ บ้านเลขที่ ซอย ถนน"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="submit-area">
+            <input type="submit"
+                   value="ยืนยันการสั่งซื้อ"
+                   class="submit-button">
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
